@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 from supabase import create_client, Client
 
 url = "https://zjwuhcvgfxreiekzslsg.supabase.co" 
-key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpqd3VoY3ZnZnhyZWlla3pzbHNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjUzOTMwNjIsImV4cCI6MjA0MDk2OTA2Mn0.9tCT9YSi9NALtERQORcYS2YfbjkF7DP3mH-rBYwcNXY"  # Substitua pela chave de API do Supabase
-
+key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpqd3VoY3ZnZnhyZWlla3pzbHNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjUzOTMwNjIsImV4cCI6MjA0MDk2OTA2Mn0.9tCT9YSi9NALtERQORcYS2YfbjkF7DP3mH-rBYwcNXY" 
 supabase: Client = create_client(url, key)
 
 def inserir_dados_supabase(preco, endereco, dimensao):
